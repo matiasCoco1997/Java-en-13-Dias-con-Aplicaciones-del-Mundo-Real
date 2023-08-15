@@ -5,7 +5,7 @@ public class Teclado extends DispositivoEntrada{
     private final int idTeclado;
     private static int contadorTeclado;
 
-    public Teclado(String tipoDeEntrada, String marca, int idTeclado) {
+    public Teclado(String tipoDeEntrada, String marca) {
         super(tipoDeEntrada, marca);
         this.idTeclado = ++contadorTeclado;
     }

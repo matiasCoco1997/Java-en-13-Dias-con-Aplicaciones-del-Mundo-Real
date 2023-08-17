@@ -8,12 +8,7 @@ import java.util.Scanner;
 
 public class CatalogoPeliculasApp {
     public static void main(String[] args) {
-
-
-        Pelicula peliculaUno = new Pelicula("Batman");
-        Pelicula peliculaDos = new Pelicula("Superman");
-        Pelicula peliculaTres = new Pelicula("Antman");
-
+        
         var salir = false;
         var consola = new Scanner(System.in);
         IServicioPeliculas servicioPeliculas = new ServicioPeliculasLista();

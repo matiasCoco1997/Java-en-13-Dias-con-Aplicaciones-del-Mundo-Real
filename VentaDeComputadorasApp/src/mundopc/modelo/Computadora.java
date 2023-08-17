@@ -30,7 +30,7 @@ public class Computadora {
                 "\n- monitor=" + monitor +
                 "\n- raton=" + raton +
                 "\n- teclado=" + teclado +
-                '}';
+                "\n}";
 
         //el println que usamos para invocar el toString, invoca los toString de los hijos de manera automatica
     }

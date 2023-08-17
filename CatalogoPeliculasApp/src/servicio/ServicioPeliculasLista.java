@@ -28,8 +28,14 @@ public class ServicioPeliculasLista implements IServicioPeliculas {
 
     @Override
     public void buscarPelicula(Pelicula pelicula) {
-        var indice = peliculas.indexOf(pelicula);
+        var indice = peliculas.indexOf(pelicula);//el indexOf retorna el indice de la pelicula que estamos buscando, sino retorna -1
 
-        System.out.println("Pelicula encontrada en el indice: " + indice);
+        if (indice == -1){
+            System.out.println("La pelicula buscada no existe: " + pelicula);
+        } else {
+            System.out.println("Pelicula encontrada en el indice: " + indice);
+        }
+
+
     }
 }

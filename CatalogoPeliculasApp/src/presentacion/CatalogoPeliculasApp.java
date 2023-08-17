@@ -3,12 +3,12 @@ package presentacion;
 import dominio.Pelicula;
 import servicio.IServicioPeliculas;
 import servicio.ServicioPeliculasLista;
-
 import java.util.Scanner;
 
 public class CatalogoPeliculasApp {
+
     public static void main(String[] args) {
-        
+
         var salir = false;
         var consola = new Scanner(System.in);
         IServicioPeliculas servicioPeliculas = new ServicioPeliculasLista();
@@ -24,8 +24,9 @@ public class CatalogoPeliculasApp {
                 System.out.println("Ocurrio un error: " + e.getMessage());
             }
 
-            System.out.println("\n\n****************************************************************");
+            System.out.println("****************************************************************");
         }
+        
     }
 
     private static void mostrarMenu(){

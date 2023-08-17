@@ -24,7 +24,7 @@ public class Computadora {
 
     @Override
     public String toString() {
-        return "Computadora{" +
+        return "\nComputadora{" +
                 "\n- idComputadora=" + idComputadora +
                 ", nombre='" + nombre + '\'' +
                 "\n- monitor=" + monitor +

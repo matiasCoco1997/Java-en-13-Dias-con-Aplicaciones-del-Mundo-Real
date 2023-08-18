@@ -57,6 +57,22 @@ public class ServicioPeliculasArchivo implements IServicioPeliculas{
     @Override
     public void agregarPelicula(Pelicula pelicula) {
 
+        boolean anexar = false;
+
+        var archivo = new File(NOMBRE_ARCHIVO);
+
+        try{
+            //revisamos si existe el archivo
+            anexar = archivo.exists();
+            var salida = new PrintWriter(new FileWriter(archivo, anexar));
+
+            //agregamos la pelicula (toString)
+            salida.println(pelicula);
+
+        } catch (Exception e){
+            System.out.println("Ocurrio un error al agregar pelicula: " + e.getMessage());
+        }
+
     }
 
     @Override

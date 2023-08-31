@@ -15,7 +15,7 @@ public class ServicioPeliculasArchivo implements IServicioPeliculas{
             if(archivo.exists()){
                 System.out.println("El archivo ya existe.");
             } else {
-                var salida = new PrintWriter( new FileWriter(archivo));
+                var salida = new PrintWriter( new FileWriter(archivo) );
                 salida.close();
                 System.out.println("Se ha creado el archivo.");
             }
@@ -95,23 +95,21 @@ public class ServicioPeliculasArchivo implements IServicioPeliculas{
             var peliculaBuscada = pelicula.getNombre();
 
             while (lineaTexto != null){
-
-                if(peliculaBuscada != null && peliculaBuscada.equalsIgnorreCase(lineaTexto)){
+                if(peliculaBuscada != null && peliculaBuscada.equalsIgnoreCase(lineaTexto)){
                     encontrada=true;
                     break;
                 }
-
                 lineaTexto = entrada.readLine();
                 indice++;
-
-                if(encontrada){
-                    System.out.println("Pelicula " + lineaTexto + " encontrada - linea " + indice);
-                } else {
-                    System.out.println("No se encontro la pelicula:  " + pelicula.getNombre());
-                }
-
-                entrada.close();
             }
+
+            if(encontrada){
+                System.out.println("Pelicula " + lineaTexto + " encontrada - linea " + indice);
+            } else {
+                System.out.println("No se encontro la pelicula:  " + pelicula.getNombre());
+            }
+
+            entrada.close();
 
         }catch (Exception e){
             System.out.println("Ocurrio un error al buscar en el archivo: " + e.getMessage());

@@ -17,14 +17,11 @@ public class CatalogoPeliculasApp {
         while(!salir){
 
             try{
-
                 mostrarMenu();
                 salir = ejecutarOpciones(consola, servicioPeliculas);
-
             } catch (Exception e){
                 System.out.println("Ocurrio un error: " + e.getMessage());
             }
-
             System.out.println("****************************************************************");
         }
         

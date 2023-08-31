@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CatalogoPeliculasApp/CatalogoPeliculasApp.iml" filepath="$PROJECT_DIR$/CatalogoPeliculasApp/CatalogoPeliculasApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java-en-13-Dias-con-Aplicaciones-del-Mundo-Real.iml" filepath="$PROJECT_DIR$/.idea/Java-en-13-Dias-con-Aplicaciones-del-Mundo-Real.iml" />
       <module fileurl="file://$PROJECT_DIR$/ListadoPersonasApp/ListadoPersonasApp.iml" filepath="$PROJECT_DIR$/ListadoPersonasApp/ListadoPersonasApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/VentaDeComputadorasApp/VentaDeComputadorasApp.iml" filepath="$PROJECT_DIR$/VentaDeComputadorasApp/VentaDeComputadorasApp.iml" />

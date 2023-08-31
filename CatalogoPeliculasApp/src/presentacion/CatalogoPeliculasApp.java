@@ -3,7 +3,6 @@ package presentacion;
 import dominio.Pelicula;
 import servicio.IServicioPeliculas;
 import servicio.ServicioPeliculasArchivo;
-import servicio.ServicioPeliculasLista;
 import java.util.Scanner;
 
 public class CatalogoPeliculasApp {
